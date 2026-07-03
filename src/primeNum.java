@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class primeNum {
     static void main() {
-        sieve(170);
+        sieve(100);
     }
     public static void sieve(int n){
         boolean[] isPrime = new boolean[n+1];
