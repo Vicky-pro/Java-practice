@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class Anagram {
     static void main() {
         Scanner sc = new Scanner(System.in);
-        int n = 3;
+        int n = 6;
+        // 6 is a perfect number
         int sum = 0;
         for(int i = 1; i <= n/2; i++){
             if(n % i == 0)
                 sum += i;
         }
-        System.out.println(sum +" "+ n);
         System.out.println(sum == n ? "Perfect" : "Not Perfect");
 
 
