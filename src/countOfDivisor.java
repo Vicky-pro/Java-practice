@@ -1,6 +1,6 @@
 public class countOfDivisor {
     static void main() {
-        System.out.println(count(18));
+        System.out.println(count(17));
     }
     public static int count(int n) {
         int count = 2;
