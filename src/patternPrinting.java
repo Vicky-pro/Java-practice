@@ -1,13 +1,47 @@
 public class patternPrinting {
     static void main() {
-        int n=10;
+        int n=5;
 
-        for(int row=1;row<n*2;row++){
-            for (int col=1;col<n*2;col++){
-                System.out.printf("%2d ",Math.min(Math.min(row,col),Math.min((n*2)-row,(n*2)-col)));
+        for(int row=0;row<n;row++){
+            for (int col=n;col>=0;col--){
+                if(row>=col){
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
+
+
+//        System.out.println("Hour glass");
+//        for(int row=0;row<n*2;row++){
+//
+//            if(row>=n) {
+//                int temp=row-n;
+//                for (int j = n-1; j >= 0; j--) {
+//                    if (temp >= j) System.out.print("* ");
+//                    else System.out.print(" ");
+//                }
+//            }else {
+//                for(int space=0;space<row;space++){
+//                    System.out.print(" ");
+//                }
+//                for (int col=n-row;col>0;col--){
+//                    System.out.print("* ");
+//                }
+//            }
+//
+//            System.out.println();
+//        }
+
+//        for(int row=1;row<n*2;row++){
+//            for (int col=1;col<n*2;col++){
+//                System.out.printf("%2d ",Math.min(Math.min(row,col),Math.min((n*2)-row,(n*2)-col)));
+//            }
+//            System.out.println();
+//        }
 
 //        System.out.println("diamond");
 //        if(n%2==0){
