@@ -1,11 +1,25 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class countMatches {
     static void main() {
+        String[] strs={};
+        System.out.println(longestCommonPrefix(strs));
 
-        System.out.println(canPalindrome("eeeed"));
-
+    }
+    public static String longestCommonPrefix(String[] v) {
+        StringBuilder ans = new StringBuilder();
+        Arrays.sort(v);
+        String first = v[0];
+        String last = v[v.length-1];
+        for (int i=0; i<Math.min(first.length(), last.length()); i++) {
+            if (first.charAt(i) != last.charAt(i)) {
+                return ans.toString();
+            }
+            ans.append(first.charAt(i));
+        }
+        return ans.toString();
     }
     public static boolean canPalindrome(String s){
         int left=0;
