@@ -1,7 +1,10 @@
 public class jumpGame {
     static void main() {
-        String s="";
-        System.out.println(canReach(s,2,3));
+        String s="fgh";
+        int[] arr={1,29};
+        int[]arr1=arr;
+        System.out.println(arr1[1]);
+//        System.out.println(canReach(s,2,3));
     }
     public static boolean canReach(String s, int minJump, int maxJump) {
         int i=0;

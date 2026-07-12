@@ -3,8 +3,9 @@ import java.util.Arrays;
 public class CountArray {
     void main(){
         int[] arr = {1,2,4,5,6,7,5,4,2,4,5,6,0,4};
-        int[]res=(countArrayy(MaxElement(arr),arr));
-        System.out.println(Arrays.toString(res));
+        Arrays.sort(arr);
+//        int[]res=(countArrayy(MaxElement(arr),arr));
+        System.out.println(Arrays.toString(arr));
     }
     public static int MaxElement(int[] arr){
         int max=0;
